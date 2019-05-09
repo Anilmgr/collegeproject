@@ -63,7 +63,7 @@
 							    	@endif
 
 
-					    			<td  > {{ Str::words(strip_tags($tablecontent->description),10) }} </td>
+					    			<td  > {{ Str::words(strip_tags($tablecontent->description),7) }} </td>
 							    	<td >{{ $tablecontent->created_at }}</td>
                                     <td >{{ $tablecontent->updated_at }}</td>                                    							    	
 							    	@if($tablecontent->featured == 1)

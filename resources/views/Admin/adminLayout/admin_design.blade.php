@@ -7,8 +7,8 @@
 
 <link href="{{ asset('css/backend_css/bootstrap.min.css') }}" rel="stylesheet">
 <link href="{{ asset('css/backend_css/datepicker3.css') }}" rel="stylesheet">
-<link href="{{ asset('css/backend_css/styles.css') }}" rel="stylesheet">
 <link href="{{ asset('css/backend_css/bootstrap-table.css') }}" rel="stylesheet">
+<link href="{{ asset('css/backend_css/styles.css') }}" rel="stylesheet">
 
 <script src="{{ asset('js/backend_js/lumino.glyphs.js') }}"></script>
 <link rel="stylesheet" type="text/css" href="{{ asset('assets/css/themify-icons.css') }}">

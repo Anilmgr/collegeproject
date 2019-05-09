@@ -18,85 +18,52 @@
 		<div class="row">
 			<div class="col-lg-12">
 				<div class="panel panel-default">
-					<div class="panel-heading">Add value of Counter</div>
+					<div class="panel-heading">Edit Counter</div>
 					<div class="panel-body">
 						<div class="col-md-12">							
 							
  							<form role="form" method="post" \>
-
-
-							<div class="row">
-								<div class="form-group col-md-3">
-									<label><svg class="glyph stroked clipboard with paper"><use xlink:href="#stroked-clipboard-with-paper"/></svg></label>
-									<input class="form-control" name = 'first_name' >
-								</div>			
-
-								<div class="form-group col-md-6">
-									<label>Title</label>
-									<input class="form-control" name = 'last_name' >
-								</div>
-							</div>	
-							<div class="row">	
-								<div class="form-group col-md-6">									
-									<label>Description</label>
-									<textarea class="form-control" name = 'username'></textarea>
-								</div>
-
-								<div class="form-group col-md-6">									
-									<label>Description</label>
-									<textarea class="form-control" name = 'email' ></textarea>
-								</div>
-							</div>
-							<div class="row">
-								<div class="form-group col-md-6">
-									<label>Password</label>
-									<input type="password" name = 'password' class="form-control">
-								</div>	
-																							
-								<div class="form-group col-md-6">
-									<label>Confirm Password</label>
-									<input type="password" name = 'password_confirmation' class="form-control">
-								</div>
-							</div>
-
-							<div class="row">	
-									<div  class="form-horizontal col-md-6" role="form"">
-									<label>Gender</label> <br/>
-									<div class="radio-inline">
-										<label>
-											<input type="radio" name="gender" id="optionsRadios1" value="1" checked>Male
-										</label>
+								<div class="form-group">
+									<div class="row">
+										<div class="col-sm-6 col-lg-3 fact">
+											<div class="fact-icon ">
+												<i class="ti-crown"></i>
+											</div>
+											<div class="fact-text">
+												<h2><input type="number" class="form-control" name="count1" value="50"></h2>
+												<p><input type="text" class="form-control" name="counter1" value="YEARS"></p>
+											</div>
+										</div>
+										<div class="col-sm-6 col-lg-3 fact">
+											<div class="fact-icon ">
+												<i class="ti-briefcase"></i>
+											</div>
+											<div class="fact-text">
+												<h2><input type="number" class="form-control" name="count2" value="80"></h2>
+												<p><input type="text" class="form-control" name="counter2" value="TEACHER"></p>
+											</div>
+										</div>
+										<div class="col-sm-6 col-lg-3 fact">
+											<div class="fact-icon ">
+												<i class="ti-user"></i>
+											</div>
+											<div class="fact-text">
+												<h2><input type="number" class="form-control" name="count3" value="500"></h2>
+												<p><input type="text" class="form-control" name="counter3" value="STUDENTS"></p>
+											</div>
+										</div>
+										<div class="col-sm-6 col-lg-3 fact">
+											<div class="fact-icon ">
+												<i class="ti-pencil-alt"></i>
+											</div>
+											<div class="fact-text">
+												<h2><input type="number" class="form-control" name="count4" value="800"></h2>
+												<p><input type="text"  class="form-control" name="counter4" value="LESSIONS"></p>
+											</div>
+										</div>
 									</div>
-									<div class="radio-inline">
-										<label>
-											<input type="radio" name="gender" id="optionsRadios2" value="0">Female
-										</label>
-									</div>									
-								</div>		
-																
-								<div class="form-group col-md-6">
-									<label>Roles</label>
-									<select class="form-control" name = 'roles'>
-									    <option value="0">Admin</option>							
-										<option value="2">Student</option>
-										<option value="1">Teacher</option>											
-									</select>									
 								</div>
-							</div>
-
-							@foreach ($counters as $counter )
-								{{ $counter->name }}
-							@endforeach
-
-								{{-- <div class="form-group">
-									<label>Choose your profile picture</label>*
-									<input type="file">
-									 <p class="help-block">Do not add any picture , it doesn't works</p>
-								</div> --}}
-								<br/>
-								<button type="submit" style="width:15%;" class="btn btn-primary btn-lg">Submit</button> 																				
-							</div>
-						
+								<div class="col-md-3 pull-right "><button class="btn btn-primary btn-block "> Update </button> </div>		
 						</form>
 					</div>
 				</div>

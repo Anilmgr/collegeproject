@@ -10,6 +10,7 @@ use App\SubMenu;
 use DB;
 use Session;
 use App\Counter;
+use App\Services;
 use App\Http\Controllers\Controller;
 
 class HomeController extends Controller
@@ -18,7 +19,7 @@ class HomeController extends Controller
     public function featuredposts()
     {
     	if(Session::has('adminsession')){ 
-    		$tablecontent=TableContent::all(); 
+    		$tablecontent = TableContent::all(); 
 
     		return view('homepagesetting.featuredposts')->with("tablecontents",$tablecontent);;
     	}
@@ -31,7 +32,9 @@ class HomeController extends Controller
     public function services()
     {
     	if(Session::has('adminsession')){
-    		return view('homepagesetting.services');
+            $services = Services::all(); 
+
+    		return view('homepagesetting.services')->with("services",$services);
     	} 
     	else
     	{
