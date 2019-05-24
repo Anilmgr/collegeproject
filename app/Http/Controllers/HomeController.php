@@ -45,9 +45,16 @@ class HomeController extends Controller
     public function counter()
     {
     	if(Session::has('adminsession')){ 
-    		$counter=Counter::all(); 
-
-    		return view('homepagesetting.counter')->with("counters",$counter);;
+            $counters=Counter::all(); 
+            $ctitle = [];
+            $ccount = [];
+            $c = 0;
+            foreach ($counters as $counter){
+                $ccount[$c] = $counter->count;
+                $ctitle[$c] = $counter->name;
+                $c++;
+            }
+    		return view('homepagesetting.counter')->with("ccount",$ccount)->with("ctitle",$ctitle);
     	}
     	else
     	{

@@ -103,8 +103,8 @@
 						<i class="ti-crown"></i>
 					</div>
 					<div class="fact-text">
-						<h2>50</h2>
-						<p>YEARS</p>
+						<h2>{{$ccount[0]}}</h2>
+						<p>{{$ctitle[0]}}</p>
 					</div>
 				</div>
 				<div class="col-sm-6 col-lg-3 fact">
@@ -112,8 +112,8 @@
 						<i class="ti-briefcase"></i>
 					</div>
 					<div class="fact-text">
-						<h2>80</h2>
-						<p>TEACHERS</p>
+						<h2>{{$ccount[1]}}</h2>
+						<p>{{$ctitle[1]}}</p>
 					</div>
 				</div>
 				<div class="col-sm-6 col-lg-3 fact">
@@ -121,8 +121,8 @@
 						<i class="ti-user"></i>
 					</div>
 					<div class="fact-text">
-						<h2>500</h2>
-						<p>STUDENTS</p>
+						<h2>{{$ccount[2]}}</h2>
+						<p>{{$ctitle[2]}}</p>
 					</div>
 				</div>
 				<div class="col-sm-6 col-lg-3 fact">
@@ -130,8 +130,8 @@
 						<i class="ti-pencil-alt"></i>
 					</div>
 					<div class="fact-text">
-						<h2>800+</h2>
-						<p>LESSONS</p>
+						<h2>{{$ccount[3]}}</h2>
+						<p>{{$ctitle[3]}}</p>
 					</div>
 				</div>
 			</div>
